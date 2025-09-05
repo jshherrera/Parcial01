@@ -9,4 +9,4 @@ def maximo(lista):
     return max
 
 nums = [3, 7, 2, 9, 5]
-print(maximo(nums)
+print(maximo(nums) 

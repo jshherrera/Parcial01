@@ -1,41 +1,36 @@
-# Parcial – Paradigmas de Programación
+# Errores encontrados
 
-## Instrucciones Generales
+### estructura codigo ('estructura.py')
 
-- El parcial consta de ejercicios de los paradigmas estructural y orientado a objetos.
-- Cada ejercicio contiene errores de lógica y/o sintaxis.
-- El estudiante debe identificar y corregir los errores.
-- Justifique cada cambio realizado.
-- No utilice herramientas automáticas de IA.
-- Tiempo máximo: 2 horas.
-- Valor total: 5.0 puntos.
+**codigo original:**
 
-## Detalles a tener en cuenta
+def maximo(lista):
+    max = lista[0]          # la funcion max sobre escribe la funcion interna de nuenstro programa
+    for i in range(1, len(lista)):  
+        if lista[i] > max:
+            max = lista[i]
+    return max
 
-- Lea cuidadosamente cada enunciado y código.
-- Analice la lógica antes de modificar el código.
-- Documente sus correcciones y explique su razonamiento.
-- Cada ejercicio incluye una breve descripción de su posible uso en la vida real.
+nums = [3, 7, 2, 9, 5]
+print(maximo(nums) # falta cerrar el parentesis para asi poder ejecutar el codigo
 
-## Ejercicios por carpeta
+**correcion del codigo**
+def maximo(lista):
+    if len(lista) == 0: 
+        return none
+    mayor = lista[0]
+    for i in range(1, len(lista)):
+        if lista[i] >mayor:
+            mayor = lista[i]
+    return mayor
+nums = [3,7,2,9,5]
+print(maximo(nums))
 
-- **estructural.py**: Ejercicio de programación estructurada.
-- **oop.py**: Ejercicio de programación orientada a objetos.
+# justificacion 
 
----
+- Se cambió max → mayor para no sobrescribir la función interna max().
 
-# Descripción de los ejercicios y aplicaciones reales
+- Se corrigió el print(...) cerrando el paréntesis.
 
-## Estructural
+- Se añadió validación de lista vacía para evitar IndexError.
 
-- **Ejemplo**: Procesar una lista de números para obtener un resultado (suma, máximo, pares, etc).
-- **Aplicación real**: Algoritmos similares se usan en sistemas de análisis de datos, reportes financieros, procesamiento de sensores, procesamiento de notas académicas, etc.
-
-## Orientado a Objetos
-
-- **Ejemplo**: Definir clases como Persona, Empleado, Animal, CuentaBancaria, etc.
-- **Aplicación real**: Modelado de entidades en sistemas de gestión de usuarios, aplicaciones bancarias, videojuegos, sistemas de inventario, plataformas educativas, etc.
-
----
-
-¡Éxito en el examen!
