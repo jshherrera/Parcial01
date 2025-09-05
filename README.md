@@ -5,13 +5,13 @@
 **codigo original:**
 
 def maximo(lista):
-    max = lista[0]          # la funcion max sobre escribe la funcion interna de nuenstro programa  
-    for i in range(1, len(lista)):    
-        if lista[i] > max:  
-            max = lista[i]  
-    return max  
+    max = lista[0]          # la funcion max sobre escribe la funcion interna de nuenstro programa  <br>
+    for i in range(1, len(lista)): <br>   
+        if lista[i] > max:  <br>
+            max = lista[i]  <br>
+    return max  <br>
 
-nums = [3, 7, 2, 9, 5]  
+nums = [3, 7, 2, 9, 5]  <br>
 print(maximo(nums) # falta cerrar el parentesis para asi poder ejecutar el codigo  
 
 **correcion del codigo**
