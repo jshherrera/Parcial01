@@ -5,14 +5,14 @@
 **codigo original:**
 
 def maximo(lista):
-    max = lista[0]          # la funcion max sobre escribe la funcion interna de nuenstro programa
-    for i in range(1, len(lista)):  
-        if lista[i] > max:
-            max = lista[i]
-    return max
+    max = lista[0]          # la funcion max sobre escribe la funcion interna de nuenstro programa  
+    for i in range(1, len(lista)):    
+        if lista[i] > max:  
+            max = lista[i]  
+    return max  
 
-nums = [3, 7, 2, 9, 5]
-print(maximo(nums) # falta cerrar el parentesis para asi poder ejecutar el codigo
+nums = [3, 7, 2, 9, 5]  
+print(maximo(nums) # falta cerrar el parentesis para asi poder ejecutar el codigo  
 
 **correcion del codigo**
 def maximo(lista):
@@ -34,3 +34,4 @@ print(maximo(nums))
 
 - Se añadió validación de lista vacía para evitar IndexError.
 
+### estructura codigo('oop.py')
