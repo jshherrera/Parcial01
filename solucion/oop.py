@@ -7,3 +7,6 @@ class Animal:
 class Gato(Animal):
     def hablar(self):
         print('MIAU')
+
+g = Gato('MIAU')
+g.hablar() 
