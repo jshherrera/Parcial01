@@ -30,13 +30,13 @@ print(maximo(nums)  # falta cerrar el parentesis
 ```python
 def maximo(lista): # se valida si la lista esta vacia
     if len(lista) == 0: #retorna la lista en caso de que este vacia
-        return none   # se cambio la funcion max para que se pueda dar una validacion a la lista 
+        return "La lista está vacía"# se cambio la funcion max para que se pueda dar una validacion a la lista 
     mayor = lista[0] # se cambia la variable max por mayor para que este no sobrescriba la funcion
     for i in range(1, len(lista)):  #recorrere la lista 
         if lista[i] >mayor: #se compara correctamente para encontrar el el mayor
             mayor = lista[i]  # se actualiza el valor maximo cuando este corresponde 
     return mayor        #retorna a el valor maximo encontrado
-nums = [3,7,2,9,5]
+nums = [3, 7, 2, 9, 5]
 print(maximo(nums)) #secerro el parentesis  
 ```
 # justificacion 
