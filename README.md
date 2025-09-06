@@ -14,30 +14,30 @@ Ejemplo: encontrar la nota más alta de un grupo de estudiantes.
 
 ### ❌ Código original (con errores)
 ```python
-def maximo(lista):
-    max = lista[0]
+def maximo(lista):  
+    max = lista[0]  # el  max podria sobrescribir la funcion
     for i in range(1, len(lista)):
         if lista[i] > max:
             max = lista[i]
     return max
 
 nums = [3, 7, 2, 9, 5]
-print(maximo(nums)
+print(maximo(nums)  # falta cerrar el parentesis 
 ```
 
 
 **correcion del codigo**
 ```python
-def maximo(lista):
-    if len(lista) == 0: 
-        return none
-    mayor = lista[0]
-    for i in range(1, len(lista)):
-        if lista[i] >mayor:
-            mayor = lista[i]
-    return mayor
+def maximo(lista): # se valida si la lista esta vacia
+    if len(lista) == 0: #retorna la lista en caso de que este vacia
+        return none   # se cambio la funcion max para que se pueda dar una validacion a la lista 
+    mayor = lista[0] # se cambia la variable max por mayor para que este no sobrescriba la funcion
+    for i in range(1, len(lista)):  #recorrere la lista 
+        if lista[i] >mayor: #se compara correctamente para encontrar el el mayor
+            mayor = lista[i]  # se actualiza el valor maximo cuando este corresponde 
+    return mayor        #retorna a el valor maximo encontrado
 nums = [3,7,2,9,5]
-print(maximo(nums))'''
+print(maximo(nums)) #secerro el parentesis  
 ```
 # justificacion 
 
