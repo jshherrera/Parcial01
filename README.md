@@ -59,7 +59,7 @@ class Animal:
 
 class Perro(Animal):
     def hablar(self):
-        print('Guau!')
+        print('miau')
 
 p = Perro('Canino')
 p.hablar   # falta agregarle el parentesis
@@ -74,12 +74,12 @@ class Animal:
     def hablar(self):
         print('Hace un sonido')
 
-class Perro(Animal):
+class Gato(Animal):
     def hablar(self):
-        print('Guau!')
+        print('MIAU')
 
-p = Perro('Canino')
-p.hablar()  # Arreglo del problema
+g = Gato('MIAU')
+g.hablar()  # Arreglo del problema
 ```
 # Errores encontrados
 - p.hablar → no se podia ejecutar el metodo por que faltaba el ()
